@@ -1,0 +1,24 @@
+<div class="page-container">
+  <div class="inicio-container">
+    <h1>Um bilhete ao vento... </h1>
+    <br>
+    <p class="subtitulo">
+      <i>"Suponho que me entender não é uma questão de inteligência e sim de sentir, de entrar em contato...
+        Ou toca, ou não toca". Clarice Lispector</i>
+    </p><br>
+
+    <div class="cards-container">
+      <div *ngFor="let item of conteudos" class="card">
+        <h3>{{ item.titulo }}</h3>
+        <p>{{ item.descricao }}</p>
+        <button mat-raised-button color="primary" (click)="abrirComentario(item)">
+          Comentar
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p>© 2025 Um bilhete ao vento. Todos os direitos reservados.</p>
+  </footer>
+</div>

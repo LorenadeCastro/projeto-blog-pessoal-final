@@ -1,0 +1,41 @@
+:root {
+  --cor-primaria: black;
+  --cor-secundaria: rgb(208, 114, 0);
+  --cor-fundo: white;
+  --cor-texto: black;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url('assets/images/ventos.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  overflow-x: hidden; /* Garante que não haja rolagem horizontal */
+
+}
+
+/* ✅ Agora está correto */
+.meu-dialogo-personalizado .mat-dialog-container {
+  background-color: white !important;
+  border-radius: 10px !important;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1) !important;
+  font-family: Georgia, 'Times New Roman', Times, serif !important;
+  color: black !important;
+}
+
+.meu-dialogo-personalizado h2,
+.meu-dialogo-personalizado mat-label,
+.meu-dialogo-personalizado textarea,
+.meu-dialogo-personalizado button {
+  font-family: Georgia, 'Times New Roman', Times, serif !important;
+}

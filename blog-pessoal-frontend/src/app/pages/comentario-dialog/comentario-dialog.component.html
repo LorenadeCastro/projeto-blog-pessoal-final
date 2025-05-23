@@ -1,0 +1,12 @@
+<h2 mat-dialog-title>Deixe seu comentário 💌</h2>
+<mat-dialog-content>
+  <mat-form-field appearance="fill" class="input-full">
+    <mat-label>Comentário</mat-label>
+    <textarea matInput [(ngModel)]="comentario" rows="4"></textarea>
+  </mat-form-field>
+</mat-dialog-content>
+
+<mat-dialog-actions align="end">
+  <button mat-button (click)="fechar()">Cancelar</button>
+  <button mat-raised-button color="primary" (click)="enviarComentario()">Enviar</button>
+</mat-dialog-actions>

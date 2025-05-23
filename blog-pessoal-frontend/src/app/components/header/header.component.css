@@ -1,0 +1,88 @@
+/* ======= ESTILO GLOBAL ======= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(135deg, #1f1c2c, #928dab);
+  min-height: 100vh;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+}
+
+/* ======= NAVBAR COM GLASSMORPHISM ======= */
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px 40px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.37);
+  color: white;
+  margin: 20px;
+  flex-wrap: wrap;
+}
+
+/* Links container */
+.navbar .links {
+  display: flex;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+
+/* Links estilizados com gradiente */
+.navbar .links a {
+  text-decoration: none;
+  font-weight: 600;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 24px;
+  background: linear-gradient(90deg, black, #492800, #7c4400);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0 0 5px rgba(255, 255, 255, 0.7);
+  transition: transform 0.3s ease, text-shadow 0.3s ease;
+}
+
+/* Hover animado */
+.navbar .links a:hover {
+  transform: scale(1.1);
+  text-shadow: 0 0 10px grey,
+               0 0 20px #ffef16,
+               0 0 30px white;
+}
+
+/* ======= RESPONSIVIDADE ======= */
+@media (max-width: 768px) {
+  .navbar {
+    padding: 10px 20px;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .navbar .links {
+    gap: 20px;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/* ======= DARK MODE ======= */
+body.dark {
+  background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+}
+
+body.dark .navbar {
+  background: rgba(0, 0, 0, 0.5);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}

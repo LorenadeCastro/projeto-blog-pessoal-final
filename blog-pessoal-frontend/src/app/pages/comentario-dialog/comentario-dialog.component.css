@@ -1,0 +1,43 @@
+/* Dialog container com fundo branco, borda arredondada e sombra leve */
+.mat-dialog-container {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: black;
+}
+
+/* Título do dialog */
+mat-dialog-title {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 28px;
+  color: rgb(208, 114, 0); /* Laranja padrão do projeto */
+  margin-bottom: 10px;
+}
+
+/* Campo de texto para comentário */
+mat-form-field {
+  width: 100%;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+textarea.mat-input-element {
+  font-size: 18px;
+  color: black;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/* Botões do dialog alinhados e espaçados */
+mat-dialog-actions {
+  margin-top: 15px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+mat-dialog-actions button {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 18px;
+  margin-left: 8px;
+}
+
+/* Estilo dos botões: cor padrão do Angular Material é ok, 
+   se quiser pode sobrescrever aqui */

@@ -1,0 +1,16 @@
+<div class="postagens-container">
+  <h2>Nova Postagem</h2>
+  <form (ngSubmit)="publicarPostagem()">
+    <input type="text" placeholder="Título" [(ngModel)]="novaPostagem.titulo" name="titulo" required>
+    <textarea placeholder="Mensagem" [(ngModel)]="novaPostagem.conteudo" name="conteudo" required></textarea>
+    <input type="text" placeholder="Autor" [(ngModel)]="novaPostagem.autor" name="autor" required>
+    <button type="submit">Publicar</button>
+  </form>
+
+  <h3>Postagens Recentes</h3>
+  <div *ngFor="let post of postagens" class="post">
+    <h4>{{ post.titulo }}</h4>
+    <p>{{ post.conteudo }}</p>
+    <small>{{ post.autor }} - {{ post.data | date:'dd/MM/yyyy' }}</small>
+  </div>
+</div>

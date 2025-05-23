@@ -1,0 +1,15 @@
+<div class="dashboard-container">
+  <h1>Dashboard</h1>
+
+  <div class="chart-container">
+    <canvas id="postsChart"></canvas>
+  </div>
+
+  <div class="stats">
+    <p><strong>Total de Postagens:</strong> {{ totalPosts }}</p>
+    <p><strong>Últimas Postagens:</strong></p>
+    <ul>
+      <li *ngFor="let post of recentPosts">{{ post.titulo }} - {{ post.data | date:'dd/MM/yyyy' }}</li>
+    </ul>
+  </div>
+</div>
